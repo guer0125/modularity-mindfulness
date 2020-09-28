@@ -54,6 +54,7 @@ h2 {
 h3 {
   margin-top: 0;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .big-text {
@@ -79,8 +80,16 @@ h3 {
   margin: 2rem 0 1rem;
 }
 
-.p-margin {
+.p-margin1 {
   margin-bottom: 2rem;
+}
+
+.p-margin2 {
+  margin-bottom: 1rem;
+}
+
+.a-margin {
+  margin-bottom: 1rem;
 }
 
 .img-article {
@@ -110,13 +119,39 @@ article a {
 }
 
 @media only screen and (min-width: 38em) {
+
   body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "banner banner banner"
+    "figone figtwo figthree";
+  }
+
+  header {
+    display: grid;
   }
 
   main {
-    display: contents;
+    display: grid;
   }
+
+  .logo {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 10;
+  }
+
+  .banner-img {
+    grid-column: 1;
+    grid-row: -2;
+    z-index: 9;
+  }
+
+  .banner {
+    grid-area: banner;
+  }
+
 
 }
