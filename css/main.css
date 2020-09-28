@@ -36,7 +36,7 @@ h1 {
   flex-direction: column;
   text-align: center;
   margin: 0;
-  font-size: 1.125rem
+  font-size: 1.125rem;
 }
 
 i {
@@ -58,8 +58,10 @@ li {
 
 .header-text {
   text-align: center;
-  padding: 0 1em 1em;
+  padding: 0 1rem 1rem;
   border-bottom: 2px solid #e2e2e2;
+  max-width: 30em;
+  margin: 0 auto;
 }
 
 .banner-img {
@@ -70,7 +72,6 @@ li {
 figure {
   margin: 1.5em 0;
 }
-
 
 @media only screen and (min-width: 38em) {
 
@@ -84,6 +85,9 @@ figure {
 
   header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
   }
 
   h2, h3 {
@@ -99,21 +103,12 @@ figure {
     align-items: stretch;
   }
 
-  ul {
-    position: absolute;
-    right: 5%;
-  }
-
   footer {
     display: flex;
     justify-content: center;
   }
 
 }
-
-
-
-
 
 
 /* h1,.top-h2 {
